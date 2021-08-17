@@ -1,3 +1,8 @@
+---
+layout: default
+title: Prerequisites
+nav_order: 99
+---
 ## Haven Protocol Web App
 # Prerequisites
 

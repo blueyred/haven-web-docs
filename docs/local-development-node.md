@@ -1,3 +1,8 @@
+---
+layout: default
+title: Development Nodes
+nav_order: 3
+---
 ## Haven Protocol Web App
 # Start a Local Development Node
 
@@ -48,5 +53,6 @@ Note if you're on a mac you will need to allow the daemon to run in System > Sec
 <img src="../assets/mac-security.png" width="400">
 
 ---
-> [React Framework :arrow_right:](react-framework.md)
+[React Framework]({{ site.baseurl }}{% link docs/react-framework.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ---

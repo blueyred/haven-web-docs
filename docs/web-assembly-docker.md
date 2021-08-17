@@ -1,3 +1,8 @@
+---
+layout: default
+title: Web Assembly - Docker
+nav_order: 5
+---
 ## Haven Protocol Web App
 # Building Haven Wallet Web Assembly using Docker
 
@@ -188,5 +193,6 @@ For me this outputs
 -->
 
 ---
-> [Web Assembly :arrow_right:](web-assembly.md)
+[Electron App]({{ site.baseurl }}{% link docs/electron-desktop-app.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ---

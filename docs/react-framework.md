@@ -1,3 +1,8 @@
+---
+layout: default
+title: React Framework
+nav_order: 4
+---
 ## Haven Protocol Web App
 # React Framework
 
@@ -16,5 +21,6 @@ The React App communicates with the wallet via the web core project.
 
 
 ---
-> [Web Assembly :arrow_right:](web-assembly-docker.md)
+[Web Assembly]({{ site.baseurl }}{% link docs/web-assembly-docker.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ---

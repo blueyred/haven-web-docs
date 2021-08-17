@@ -1,7 +1,13 @@
+---
+layout: default
+title: Getting Started
+nav_order: 2
+---
+
 ## Haven Protocol Web App
 # Getting Started
 
-Lets get setup with the React JS app first. There are a [few prerequisites](prerequisites.md) you'll need.
+Lets get setup with the React JS app first. There are a [few prerequisites]({{ site.baseurl }}{% link docs/prerequisites.md %}) you'll need.
 I'll keep my repositories locally in a Projects folder.
 
 ```bash
@@ -78,5 +84,6 @@ This should start up a development server and sere the files into your web brows
 This will be able to open wallet files and generate new wallets but you won't be able to sync without a local node runnning.
 
 ---
-> [Start a local development node :arrow_right:](local-development-node.md)
+[Start a local development node]({{ site.baseurl }}{% link docs/local-development-node.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ---

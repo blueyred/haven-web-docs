@@ -1,3 +1,8 @@
+---
+layout: default
+title: Electron Desktop App
+nav_order: 6
+---
 ## Haven Protocol Web App
 # Electron Desktop App
 
@@ -28,5 +33,6 @@ npm run start:desktop
 TBC
 
 ---
-> [Start a local development node :arrow_right:](local-development-node.md)
+[FAQ]({{ site.baseurl }}{% link docs/dev-faq.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ---

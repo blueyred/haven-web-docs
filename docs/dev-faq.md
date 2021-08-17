@@ -1,3 +1,8 @@
+---
+layout: default
+title: FAQ
+nav_order: 98
+---
 ## Haven Protocol Web App
 # Development FAQ
 
@@ -14,5 +19,6 @@ In /client/src/constants/env.ts you'll need to override them for your local or d
 
 
 ---
-> [Next :arrow_right:](tbc.md)
+[FAQ]({{ site.baseurl }}{% link docs/dev-faq.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 ---
