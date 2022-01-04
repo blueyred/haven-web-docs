@@ -1,31 +1,52 @@
 ---
 layout: default
 title: Electron Desktop App
-nav_order: 6
+nav_order: 10
 ---
 ## Haven Protocol Web App
 # Electron Desktop App
 
-The desktop app shares a lot of code with the web app there are incompatibiliteis between them which requires platform specific workarounds. The desktop files are in src/platform/desktop
+The desktop app shares a lot of code with the web app there are incompatibiliteis between them which requires platform specific workarounds. The desktop files are in src/platform/desktop. 
 
 [ElectronJS](https://www.electronjs.org/) is used to build the ReactJS project into a desktop app, note this is different to the standard way of building out React apps using React Native. Essentially it packages the app with components from the Chrome browser into a packaged "app".
 
-To build the desktop app.
+The github build script is in
+ [.github/workflows/desktop.build.yml](https://github.com/haven-protocol-org/haven-web-app/blob/master/.github/workflows/desktop.build.yml)
+
+Current builds are done using Node v14. 
+
+
+To build the desktop app you first need to setup and build the web app so that the required files are available
 ```bash
 cd client
-?(not sure if this is neccessary) npm run copy-build
+npm install
+npm audit fix --production
 npm run build:desktop
+npm run copy-build
 ```
+then into the haven-desktop-app folder install node modules and use the latest wallet core.
+
+```bash
+cd ../haven-desktop-app
+npm install
+npm install haven-wallet-core@latest --save
+npm audit fix --production
+```
+move out to the main containing folder
+```bash
+cd ..
+```
+
 for production
 ```bash
 sh ./sh/make.sh
 ```
-or 
+or for development
 ```bash
 sh ./sh/develop.sh
 ```
 
-make sure the files are availbel run
+make sure the files are availble run
 ```bash
 npm run start:desktop
 ```

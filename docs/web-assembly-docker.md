@@ -40,15 +40,24 @@ Next we need to make sure the translation files are built for the main C++ proje
 
 ```bash
 > cd haven-web-core/external/haven-web-cpp/external/haven
-> make release
+> mkdir -p build/release
+> cd build/release
+> cmake ../..
+> make obj_common
 ```
- 
+<!-- 
 This will start the build process, the translation headers are all we need, so you can interupt it once they're built, for me they're built after about 30 seconds, once you see
+-->
+This will build the translation headers, and should be done in a minute or so.
+Ensure that the various language files are created and updated.
 ```
-[  3%] Completed 'generate_translations_header'
+[ 22%] Performing install step for 'generate_translations_header'
+[ 33%] Completed 'generate_translations_header'
+[100%] Built target obj_common
 ```
 now we can copy them into place
 ```bash
+> cd ../..
 > cp build/release/translations/translation_files.h src/common/translation_files.h
 ```
 we can now build the web assemblies from the main haven-web-core folder
@@ -71,7 +80,7 @@ change
 ```source ../../utils/emsdk/emsdk_env.sh```
 to
 ```source ../emsdk/emsdk_env.sh```
-I also comment out the patching of the version as we're likekly doing some development and it causes issues updating the version in the web app everytime you build the assembly, so comment out the version and set it manually, eg.
+I also comment out the patching of the version as we're likely doing some development and it causes issues updating the version in the web app everytime you build the assembly, so comment out the version and set it manually, to whatever the version is in the package.json file eg.
 
 ```
 #NPM_VERSION=$(npm --no-git-tag-version version)
