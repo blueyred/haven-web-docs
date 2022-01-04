@@ -48,8 +48,8 @@ Currently scripts are
 * **build:web** Builds the web app
 * **start:desktop** Start and serve the desktop app
 * **build:desktop**  Build the desktop app JS
-* **build:web:ci** ?
-* **build:desktop:ci** ? 
+* **build:web:ci** For github builds ( continous integration )
+* **build:desktop:ci** For github builds ( continous integration )
 * **copy-build** Copy the built JS to the desktop app folder need to run this before building the Electron App
 * **copy-haven-core** Copies the haven-wallet-core into the public folder
 * **test** Left over from the scaffolding
