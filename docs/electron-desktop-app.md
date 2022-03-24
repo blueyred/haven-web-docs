@@ -36,7 +36,6 @@ move out to the main containing folder
 ```bash
 cd ..
 ```
-
 for production
 ```bash
 sh ./sh/make.sh
@@ -46,11 +45,14 @@ or for development
 sh ./sh/develop.sh
 ```
 
-make sure the files are availble run
+make sure the files are availble run from the client repository, if this isn't running in the background you'll see "Haven Vault is waiting on webpack. Please wait a moment..."
 ```bash
+cd client
 npm run start:desktop
 ```
 ## Debugging
+
+If you're testing on testnet - ensure you use the tesnet gateway not localhost or 127.0.0.1 - there is a bug that will break testing
 TBC
 
 ---

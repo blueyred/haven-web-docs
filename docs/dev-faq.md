@@ -24,8 +24,16 @@ In /client/src/constants/env.ts you'll need to override them for your local or d
 +  */
 
 ### Using with NodeJS (wasm)
-
 Ensure you set the "**proxyToWorker: true**" on the wallet config object, otherwise you will get erros when trying to sync a wallet.
+
+
+### GUIs hang on opening 
+YOU get the message "Haven Vault is waiting on webpack. Please wait a moment..."
+You're building a development version and it needs webpac running in the background
+You need to have "npm run start:desktop" runnng from the client folder.
+
+### Changing the desktop build environment during developemnt builds
+This is selected when you do "npm run start:desktop" - not when you build the electron app
 
 
 ### Using an updated development haven-wallet-core from NPM

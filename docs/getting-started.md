@@ -61,7 +61,12 @@ First thing is to install the required dependancies
 ```bash
 > npm install
 ```
-Once thats finished you'll have the various node libraries in the node_modules folder
+Once thats finished you'll have the various node libraries in the node_modules folder. To allow node to serve the web assembly files they need to be copied from the node_modules folder to the public folder that node serves
+```bash
+> npm run copy-haven-core
+``` 
+
+
 
 You should now be able to build and start the app with 
 ```bash
