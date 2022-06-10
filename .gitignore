@@ -7,3 +7,5 @@
 _site
 Gemfile.lock
 node_modules
+jtd_docs*
+jtd_favicon.ico

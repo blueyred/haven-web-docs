@@ -50,7 +50,7 @@ Or once you have logged into your wallet you can enable it using
 ---
 #### Mac Users
 Note if you're on a mac you will need to allow the daemon to run in System > Security & Privacy, after the first run you can allow it via the Allow button.
-<img src="../assets/mac-security.png" width="400">
+<img src="../assets/images/mac-security.png" width="400">
 
 ---
 [React Framework]({{ site.baseurl }}{% link docs/react-framework.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
