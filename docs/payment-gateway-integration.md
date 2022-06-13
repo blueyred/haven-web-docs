@@ -14,8 +14,8 @@ First register the payment with your 3rd party shopping cart system. To be able 
 Ask the user to pay the amount to the integrated address.
 Next you can use the Haven block explorer to check if the payment has been made.   
 **Option 1:** Doesn't require an automated job to be setup but does add a buden to the user to supply the transaction hash/ID. After they have paid they enter the transaction hash allowing the vendor to identify the transaction.   
-**Option 2:** Requires an automated job running constantly in the background that checks the explorer for any new payments into the address using the payment wallet's private view key. It would need to run at minimum every 10 mins, as the api check the last 5 blocks and each block is a 2 minute time frame
-
+**Option 2:** Requires an automated job running constantly in the background that checks the explorer for any new payments into the address using the payment wallet's private view key. It would need to run at minimum every 10 mins, as the api check the last 5 blocks and each block is a 2 minute time frame  
+**Option 3:** Use a direct integration with the Haven wallet RPC daemon, this requires running a Haven daemon on your server, this solution is outside of this documents remit, more information is available at [docs.havenprotocol.](https://docs.havenprotocol.org/rpc/1.2.9q/RPC_API.html) and there are PHP code examples in the [Haven payment gateway](https://github.com/blueyred/haven-payment-gateway/) repository
 
 ![Payment Integration flow](../assets/images/payment-integration.svg)
 
